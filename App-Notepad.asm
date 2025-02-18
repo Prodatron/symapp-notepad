@@ -1679,7 +1679,7 @@ prgwinsta   ds 4*11
 
 prgtxtinf1  db "Notepad for SymbOS",0
 prgtxtinf2 db " Version 1.3 (Build "
-read "..\..\..\SVN-Main\trunk\build.asm"
+read "..\..\..\SRC-Main\build.asm"
            db "pdt)",0
 prgtxtinf3  db " Copyright <c> 2023 SymbiosiS"
 prgtxtinf0  db 0
@@ -1795,7 +1795,7 @@ prgwinmen5tx2 db "About Notepad...",0
 
 ;### ALERT BOXES ##############################################################
 
-prgtxtinf  dw prgtxtinf1,4*1+2,prgtxtinf2,4*1+2,prgtxtinf3,4*1+2,prgicnbig
+prgtxtinf  dw prgtxtinf1,4*1+2,prgtxtinf2,4*1+2,prgtxtinf3,4*1+2,0,prgicnbig,prgicn16c
 
 prgtxterr1  dw prgtxterra,4*1+2,prgtxterrb,4*1+2,prgtxtinf0,4*1+2
 prgtxterr2  dw prgtxterrc,4*1+2,prgtxtinf0,4*1+2,prgtxtinf0,4*1+2
@@ -1805,7 +1805,7 @@ prgtxterr4  dw prgtxterre,4*1+2,prgtxterrf,4*1+2,prgtxtinf0,4*1+2
 prgtxtsav   dw prgtxtsav1,4*1+2,prgtxtinf0,4*1+2,prgtxtinf0,4*1+2
 
 prgtxtfnd   dw fndmsgtxt1,4*1+2,prgtxtinf0,4*1+2,prgtxtinf0,4*1+2
-prgtxtrep   dw fndmsgtxt2a,4*1+2,prgtxtinf0,4*1+2,prgtxtinf0,4*1+2,prgicnbig
+prgtxtrep   dw fndmsgtxt2a,4*1+2,prgtxtinf0,4*1+2,prgtxtinf0,4*1+2,0,prgicnbig,prgicn16c
 prgtxtmem   dw fndmsgtxt3a,4*1+2,fndmsgtxt3b,4*1+2,prgtxtinf0,4*1+2
 prgtxtnum   dw fndmsgtxt4,4*1+2,prgtxtinf0,4*1+2,prgtxtinf0,4*1+2
 
